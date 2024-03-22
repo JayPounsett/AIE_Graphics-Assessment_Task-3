@@ -5,8 +5,7 @@ using UnityEngine;
 public class MartialArts : MonoBehaviour {
   Animator animator;
 
-  public GameObject punchLeftFX;
-  public GameObject punchRightFX;
+  public GameObject punchFX;
   public GameObject kickFX;
 
   // Start is called before the first frame update

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,5 +19,11 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Forward", Mathf.Abs(fwd));
         animator.SetFloat("Sense", Mathf.Sign(fwd));
         animator.SetFloat("Turn", Input.GetAxis("Horizontal"));
+
+        // Quit Program
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
